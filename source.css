@@ -1,1 +1,52 @@
 @import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+/*custom anicord theme card on Vencord addon card*/
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) .vc-addon-title::before {
+    content: ">  ";
+    color: hsl(var(--accent-hsl));
+    font-family: "NerdFont";
+    font-size: 23px;
+}
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) .vc-addon-title {
+	font-family: "Dancing Script";
+	font-size: 23px;
+	top: -3px;
+}
+.contentTransitionWrap__23e6b:has(.vc-settings-quickActions-card) .vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]):not(:has([checked])) .vc-addon-title::after {
+	content: " active Online";
+	color: hsl(var(--accent-hsl));
+	font-family: "Dancing Script";
+	font-size: 15px;
+}
+.contentTransitionWrap__23e6b:has(.vc-settings-quickActions-card) .vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]):has([checked]) .vc-addon-title::after {
+	content: " active Local";
+	color: hsl(var(--accent-hsl));
+	font-family: "Dancing Script";
+	font-size: 15px;
+}
+.contentTransitionWrap__23e6b:not(:has(.vc-settings-quickActions-card)) .vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]):not(:has([checked])) .vc-addon-title::after {
+	content: " active Local";
+	color: hsl(var(--accent-hsl));
+	font-family: "Dancing Script";
+	font-size: 15px;
+}
+.contentTransitionWrap__23e6b:not(:has(.vc-settings-quickActions-card)) .vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]):has([checked]) .vc-addon-title::after {
+	content: " active Online";
+	color: hsl(var(--accent-hsl));
+	font-family: "Dancing Script";
+	font-size: 15px;
+}
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) .vc-addon-author {
+	color: hsl(var(--accent-hsl));
+}
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) .vc-addon-author::before {
+	content: "@";
+	color: var(--text-normal);
+}
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) .vc-addon-author::after {
+	content: " <- Yeah, this me";
+	color: var(--text-normal);
+}
+.vc-addon-card:has([href="https://github.com/sang765/Anicord-Theme"]) {
+	background-color: hsla(var(--accent-hsl), .3) !important;
+	box-shadow: 0px 0px 10px hsl(var(--accent-hsl));
+}
